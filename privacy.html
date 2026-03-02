@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>PhishGuard — Privacy Policy</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  width: 560px;
+  margin: 0 auto;
+  padding: 28px 24px 40px;
+  background: #0d1117;
+  font-family: "Segoe UI", system-ui, sans-serif;
+  color: #c9d1d9;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.hdr {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-bottom: 24px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid #21262d;
+}
+.hdr-icon { font-size: 22px; }
+.hdr-title { font-size: 18px; font-weight: 700; color: #e6edf3; }
+.hdr-sub { font-size: 11px; color: #484f58; margin-top: 1px; }
+h2 {
+  font-size: 13px;
+  font-weight: 600;
+  color: #e6edf3;
+  margin: 20px 0 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #21262d;
+}
+p { margin-bottom: 8px; color: #8b949e; }
+ul { margin: 4px 0 8px 18px; color: #8b949e; }
+ul li { margin-bottom: 3px; }
+.tag {
+  display: inline-block;
+  background: #1a2332;
+  border: 1px solid #1f6feb44;
+  color: #58a6ff;
+  font-size: 11px;
+  padding: 1px 7px;
+  border-radius: 20px;
+  margin-right: 4px;
+}
+.green { color: #3fb950; font-weight: 600; }
+.footer {
+  margin-top: 28px;
+  padding-top: 12px;
+  border-top: 1px solid #21262d;
+  font-size: 11px;
+  color: #484f58;
+}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <span class="hdr-icon">🛡</span>
+  <div>
+    <div class="hdr-title">PhishGuard</div>
+    <div class="hdr-sub">Privacy Policy — last updated March 2026</div>
+  </div>
+</div>
+
+<h2>Summary</h2>
+<p><span class="green">PhishGuard does not collect, transmit, or store any personal data.</span> All email analysis happens locally in your browser. No email content, addresses, or metadata ever leaves your device through this extension.</p>
+
+<h2>What PhishGuard does</h2>
+<p>PhishGuard analyses emails you open in supported webmail clients to detect phishing indicators. It reads the content of the currently open email in your browser tab to perform this analysis. This processing is entirely local — no data is sent to PhishGuard servers.</p>
+
+<h2>Data processed locally</h2>
+<p>The following data is read from your browser tab to perform analysis, and is never transmitted externally:</p>
+<ul>
+  <li>Sender address, subject line, and email body text</li>
+  <li>Links contained in the email</li>
+  <li>Email headers (Reply-To, SPF, DKIM, DMARC results)</li>
+  <li>Attachment names and types</li>
+</ul>
+
+<h2>Optional external services</h2>
+<p>PhishGuard includes optional integrations that, when enabled by the user, send limited data to third-party services:</p>
+<ul>
+  <li><span class="tag">VirusTotal</span> If you enter a VirusTotal API key, URLs and file hashes from the email may be submitted to VirusTotal for scanning. This is governed by <a href="https://www.virustotal.com/gui/terms-of-service" style="color:#58a6ff">VirusTotal's Terms of Service</a>.</li>
+  <li><span class="tag">DNS lookups</span> Domain reputation checks send domain names (not email content) to Google's public DNS-over-HTTPS service (dns.google) to verify sender domains.</li>
+  <li><span class="tag">RDAP</span> Domain registration lookups send domain names to rdap.org to check domain age.</li>
+</ul>
+<p>These features are entirely optional. VirusTotal scanning requires you to explicitly provide your own API key. DNS and RDAP lookups involve only domain names, never email content or personal information.</p>
+
+<h2>License validation</h2>
+<p>If you use a license key, the key string is sent to the LemonSqueezy API solely to verify its validity. No personal information or email data is included in this request.</p>
+
+<h2>Local storage</h2>
+<p>PhishGuard stores the following in your browser's local extension storage:</p>
+<ul>
+  <li>Your per-site on/off preferences</li>
+  <li>Your VirusTotal API key (if provided)</li>
+  <li>Your license key (if provided)</li>
+  <li>Whitelisted domains you have added</li>
+</ul>
+<p>This data never leaves your browser and is not accessible to any server.</p>
+
+<h2>No tracking, no analytics</h2>
+<p>PhishGuard contains no analytics, telemetry, crash reporting, or usage tracking of any kind. The extension does not know how many users it has, which emails are analysed, or how it is used.</p>
+
+<h2>Permissions</h2>
+<p>PhishGuard requests the following browser permissions:</p>
+<ul>
+  <li><span class="tag">storage</span> To save your settings locally.</li>
+  <li><span class="tag">host permissions</span> To read and analyse email content on supported webmail sites you visit.</li>
+  <li><span class="tag">scripting / tabs</span> (Chrome only) To inject the phishing analysis engine into Outlook pages.</li>
+</ul>
+
+<h2>Contact</h2>
+<p>PhishGuard is developed for internal law enforcement forensic use. For questions about this privacy policy, contact the extension maintainer directly.</p>
+
+<div class="footer">PhishGuard v2.9.2 · All analysis is local · No data collection</div>
+
+</body>
+</html>
